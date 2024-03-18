@@ -135,17 +135,17 @@ const uint8_t our_report_descriptor_kb_mouse[] = {
     0x09, 0x2F,                //   Usage (Phone Mute)
     0x95, 0x01,                //   Report Count (1)
     0x81, 0x02,                //   Input (Data,Var,Abs,No Wrap,Linear,Preferred State,No Null Position)
+    
+    //////////////////////////////
+    //Add support for AC Home and AC Back. (Amongst a few others)
+    //////////////////////////////
     0x05, 0x0C,                //   Usage Page (Consumer)
-	
-	//////////////////////////////
-	//Add support for AC Home and AC Back. (Amongst a few others)
-	//////////////////////////////
     0x1A, 0x20, 0x02,          //   Usage Minimum (AC Find and Replace)
     0x2A, 0x27, 0x02,          //   Usage Maximum (AC Refresh)
     0x75, 0x01,                //   Report Size (1)
     0x95, 0x08,                //   Report Count (8)
     0x81, 0x02,                //   Input (Data,Var,Abs,No Wrap,Linear,Preferred State,No Null Position)
-	///////////////////////////////
+    ///////////////////////////////
 
     0xC0,                      // End Collection
 };
